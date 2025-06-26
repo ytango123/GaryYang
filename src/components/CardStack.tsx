@@ -4,23 +4,23 @@ import { useEffect, useState } from 'react';
 // 为每张卡片定义最终位置和角度
 const cards = [
   {
-    image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80',
+    image: 'https://cdn.jsdelivr.net/gh/ytango123/GaryYang.github.io@main/public/images/abstract.png',
     position: { x: -280, y: -10, rotate: -16, scale: 0.95 }
   },
   {
-    image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=80',
+    image: 'https://cdn.jsdelivr.net/gh/ytango123/GaryYang.github.io@main/public/images/bright.jpg',
     position: { x: -130, y: 0, rotate: -4, scale: 1 }
   },
   {
-    image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=80',
+    image: 'https://cdn.jsdelivr.net/gh/ytango123/GaryYang.github.io@main/public/images/DT.jpg',
     position: { x: 0, y: -40, rotate: 0, scale: 1.05 }
   },
   {
-    image: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&q=80',
+    image: 'https://cdn.jsdelivr.net/gh/ytango123/GaryYang.github.io@main/public/images/man.jpg',
     position: { x: 160, y: -30, rotate: -2, scale: 1 }
   },
   {
-    image: 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800&q=80',
+    image: 'https://cdn.jsdelivr.net/gh/ytango123/GaryYang.github.io@main/public/images/spring.jpg',
     position: { x: 320, y: 0, rotate: 14, scale: 0.95 }
   }
 ];
