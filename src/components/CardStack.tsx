@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 // 为每张卡片定义最终位置和角度
 const cards = [
   {
-    image: 'https://cdn.jsdelivr.net/gh/ytango123/GaryYang.github.io@main/public/images/boat.jpg?w=400&q=75&v=3',
+    image: 'https://cdn.jsdelivr.net/gh/ytango123/GaryYang.github.io@main/public/images/boat_small.jpg?w=400&q=75&v=3',
     position: { x: -290, y: -10, rotate: -16, scale: 0.95 }
   },
   {
