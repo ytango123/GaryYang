@@ -4,23 +4,23 @@ import { useEffect, useState } from 'react';
 // 为每张卡片定义最终位置和角度
 const cards = [
   {
-    image: 'https://cdn.jsdelivr.net/gh/ytango123/GaryYang.github.io@main/public/images/boat.jpg?w=400&q=75&v=2',
+    image: 'https://cdn.jsdelivr.net/gh/ytango123/GaryYang.github.io@main/public/images/boat.jpg?w=400&q=75&v=3',
     position: { x: -290, y: -10, rotate: -16, scale: 0.95 }
   },
   {
-    image: 'https://cdn.jsdelivr.net/gh/ytango123/GaryYang.github.io@main/public/images/spring.jpg?w=400&q=75&v=2',
+    image: 'https://cdn.jsdelivr.net/gh/ytango123/GaryYang.github.io@main/public/images/spring.jpg?w=400&q=75&v=3',
     position: { x: -130, y: 0, rotate: -4, scale: 1 }
   },
   {
-    image: 'https://cdn.jsdelivr.net/gh/ytango123/GaryYang.github.io@main/public/images/DT.jpg?w=400&q=75&v=2',
+    image: 'https://cdn.jsdelivr.net/gh/ytango123/GaryYang.github.io@main/public/images/DT.jpg?w=400&q=75&v=3',
     position: { x: 0, y: -40, rotate: 0, scale: 1.05 }
   },
   {
-    image: 'https://cdn.jsdelivr.net/gh/ytango123/GaryYang.github.io@main/public/images/man.jpg?w=400&q=75&v=2',
+    image: 'https://cdn.jsdelivr.net/gh/ytango123/GaryYang.github.io@main/public/images/man.jpg?w=400&q=75&v=3',
     position: { x: 160, y: -30, rotate: -2, scale: 1 }
   },
   {
-    image: 'https://cdn.jsdelivr.net/gh/ytango123/GaryYang.github.io@main/public/images/bright.jpg?w=400&q=75&v=2',
+    image: 'https://cdn.jsdelivr.net/gh/ytango123/GaryYang.github.io@main/public/images/bright.jpg?w=400&q=75&v=3',
     position: { x: 330, y: 0, rotate: 14, scale: 0.95 }
   }
 ];
