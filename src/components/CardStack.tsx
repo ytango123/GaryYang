@@ -55,17 +55,41 @@ const cardVariants = {
   })
 };
 
+const preloadImages = async () => {
+  const loadImage = (src: string) => {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.src = src;
+      img.onload = () => resolve(img);
+      img.onerror = reject;
+    });
+  };
+
+  try {
+    await Promise.all(cards.map(card => loadImage(card.image)));
+    return true;
+  } catch (error) {
+    console.error('Error preloading images:', error);
+    return false;
+  }
+};
+
 const CardStack: React.FC = () => {
   const [animation, setAnimation] = useState<'hidden' | 'stacked' | 'fanned'>('hidden');
 
   useEffect(() => {
-    const stackTimer = setTimeout(() => setAnimation('stacked'), 300);
-    const fanTimer = setTimeout(() => setAnimation('fanned'), 1000);
-    
-    return () => {
-      clearTimeout(stackTimer);
-      clearTimeout(fanTimer);
+    const loadAndAnimate = async () => {
+      await preloadImages();
+      const stackTimer = setTimeout(() => setAnimation('stacked'), 300);
+      const fanTimer = setTimeout(() => setAnimation('fanned'), 1000);
+      
+      return () => {
+        clearTimeout(stackTimer);
+        clearTimeout(fanTimer);
+      };
     };
+
+    loadAndAnimate();
   }, []);
 
   return (

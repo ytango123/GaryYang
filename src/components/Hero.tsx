@@ -45,7 +45,7 @@ const Hero: React.FC = () => (
         SHENZHEN, GUANGDONG
       </div>
       <div style={{ 
-        color: '#D1D1D1',
+        color: '#C0C0C0',
         fontWeight: 300,
       }}>
         123090721@link.cuhk.edu.cn
